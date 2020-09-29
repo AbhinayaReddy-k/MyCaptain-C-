@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    char Name[30];
+    int age;
+    cout<<"Enter Name  of voter"<<endl;
+    cin>>Name;
+    cout<<"enter age of "<<Name<<endl; 
+    cin>>age;
+    if(age>=18){
+        cout<<Name<<" is eligible to vote"<<endl;
+        
+    }
+    else
+      cout<<Name<<" is Not Eligible to vote";
+    return 0;
+}
