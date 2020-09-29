@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+class Time{
+    public:
+      int h,m,s;
+    void convert(){
+        int a,b;
+        cout<<"Time is: "<<h<<":"<<m<<":"<<s<<endl;
+        a=h*60*60;
+        b=m*60;
+        long int c=a+b+s;
+        cout<<"Time in total seconds: "<<c;
+    }
+};
+int main()
+{
+   Time p;
+    cout<<"Enter time:"<<endl;
+    cout<<"Hours:"<<endl;
+    cin>>p.h;
+    cout<<"Minutes:"<<endl;
+    cin>>p.m;
+    cout<<"seconds:"<<endl;
+    cin>>p.s;
+    p.convert();
+    return 0;
+}
